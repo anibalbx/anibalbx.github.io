@@ -1,15 +1,57 @@
 ---
-import ImageCard from "../components/ImageCard.astro";
-
-let srcImage ="https://images.unsplash.com/photo-1668554245790-bfdc72f0bb3d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
-
+let srcImage =
+  "https://images.unsplash.com/photo-1668554245790-bfdc72f0bb3d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 ---
 
 <section id="#sobre-mi" class="my-4">
-  <div>
-    <h2 class="text-2xl  text-lime-400 pixel-f">Sobre mí</h2>
-    <ImageCard srcImage={srcImage}></ImageCard>
-    
+  <h2 class="text-2xl text-lime-400 pixel-f">Sobre mí</h2>
+
+  <div
+    class="bg-gray-900 rounded-full p-4 border-2 border-gray-800 flex items-center justify-center"
+  >
+    <div class="w-64 h-64 aspect-w-1 aspect-h-1 flex-none">
+      <img
+        src={srcImage}
+        alt="Imagen cuadrada"
+        class="w-64 h-64 rounded-full object-cover"
+      />
+    </div>
+    <div class="px-24 flex-auto">
+      <div class="font-semibold">
+        <p>Aníbal Simarro Garrido</p>
+      </div>
+      <div class="font-extralight italic text-sm text-justify">
+        <p>
+          ¡Hola! <br /> Soy un desarrollador apasionado con una formación diversa
+          en el mundo de la programación, me he formado en diversas áreas como el
+          desarrollo aplicaciones Android, desarrollo web y programación de videojuegos.
+          Soy un profesional versátil, me apasiona el investigar y desarrollar nuevas
+          tecnologías para estar en lo último del sector de la informática. Actualmente,
+          me encuentro enfocado en ampliar mis conocimientos y experiencia en el
+          desarrollo web, con especial interés en tecnologías frontend y backend.
+          Estoy motivado por los desafíos que plantea el mundo web y dispuesto a
+          aportar soluciones creativas e innovadoras a cada proyecto.
+        </p>
+      </div>
+      <div class="text-sm mt-2">
+        <p>Otros intereses:</p>
+        <div
+          class="flex flex-wrap space-x-1 space-y-1 items-start justify-start"
+        >
+          <div class="bg-purple-600 px-4 py-1 rounded-full ml-1 mt-1">
+            Fitness
+          </div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+          <div class="bg-purple-600 px-4 py-1 rounded-full">Fitness</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

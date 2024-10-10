@@ -1,5 +1,4 @@
 ---
-import Joypad from "../icons/Joypad.astro";
 
 interface Props {
   link: string,
@@ -15,7 +14,6 @@ const { link, gradientA, gradientB, colorLogo} = Astro.props;
 <div class="flex justify-center items-center">
   <div class="relative w-32 h-32">
     <div class=`absolute inset-0 bg-gradient-to-t ${gradientA} ${gradientB}  z-0 rounded-lg blur-md `></div>
-    
      <a href={link}>
        <div class=`absolute inset-0 bg-gray-950  rounded-lg z-10 ${colorLogo} flex justify-center items-center text-sm`><slot/></div>
      </a>
