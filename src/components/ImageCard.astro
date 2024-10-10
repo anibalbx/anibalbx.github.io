@@ -1,0 +1,33 @@
+---
+interface Props {
+  srcImage: string,
+
+}
+
+const { srcImage} = Astro.props;
+
+---
+
+<div class="bg-gray-900 rounded-full p-4 border-2 border-gray-800">
+  <!-- <div class="w-24 h-24 rounded-full" style=`background-image: url(${srcImage})`>
+  </div> -->
+  <div class="w-64 h-64 aspect-w-1 aspect-h-1 ">
+    <img src={srcImage} alt="Imagen cuadrada" class="w-64 h-64 rounded-full object-cover">
+  </div>
+  <div class="px-24  ">
+    <div class="font-semibold">
+      <p>Aníbal Simarro Garrido</p>
+    </div>
+    <div class="font-extralight italic">
+      ¡Hola! Soy un desarrollador apasionado con una formación diversa en el mundo
+      de la programación, me he formado en diversas áreas como el desarrollo
+      aplicaciones Android, desarrollo web y programación de videojuegos. Soy un
+      profesional versátil, me apasiona el investigar y desarrollar nuevas
+      tecnologías para estar en lo último del sector de la informática.
+      Actualmente, me encuentro enfocado en ampliar mis conocimientos y
+      experiencia en el desarrollo web, con especial interés en tecnologías
+      frontend y backend. Estoy motivado por los desafíos que plantea el mundo web
+      y dispuesto a aportar soluciones creativas e innovadoras a cada proyecto.
+    </div>
+  </div>
+</div>

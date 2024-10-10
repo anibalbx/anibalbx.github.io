@@ -1,6 +1,15 @@
+---
+import ImageCard from "../components/ImageCard.astro";
+
+let srcImage ="https://images.unsplash.com/photo-1668554245790-bfdc72f0bb3d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+
+---
+
 <section id="#sobre-mi" class="my-4">
   <div>
-    <h2 class="text-2xl font-semibold">Sobre mí</h2>
+    <h2 class="text-2xl  text-lime-400 pixel-f">Sobre mí</h2>
+    <ImageCard srcImage={srcImage}></ImageCard>
     
   </div>
 </section>
