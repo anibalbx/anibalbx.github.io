@@ -17,6 +17,9 @@ importers:
       '@fontsource-variable/montserrat':
         specifier: ^5.1.0
         version: 5.1.0
+      '@fontsource-variable/pixelify-sans':
+        specifier: ^5.1.0
+        version: 5.1.0
       astro:
         specifier: ^4.15.12
         version: 4.15.12(rollup@4.24.0)(typescript@5.6.2)
@@ -340,6 +343,9 @@ packages:
 
   '@fontsource-variable/montserrat@5.1.0':
     resolution: {integrity: sha512-1bloVBKJx/ABBmF+/VzhJZDLzaDNUxw/8Pt5AOgfKL6N3t1fAhwtJBb1gdqU7ABckSNLsKf572A5Inv9YneRug==}
+
+  '@fontsource-variable/pixelify-sans@5.1.0':
+    resolution: {integrity: sha512-NBt2JLCcJCbx+gv4VgZ4VvukHPSTF1i4Pd7zG/rc5GWCYKSJ5G+FqVAKhLeeLdrtwZZoANcX/r08X+s7Q1iOzQ==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2561,6 +2567,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/montserrat@5.1.0': {}
+
+  '@fontsource-variable/pixelify-sans@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

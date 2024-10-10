@@ -5,7 +5,10 @@ import '../styles/global.css'
 import Head from "../layouts/Head.astro";
 import Button from "../components/Button.astro";
 import Sun from "../icons/Sun.astro";
-import Nav from '../components/Nav.astro';
+import Nav from '../layouts/Nav.astro';
+import Hero from '../layouts/Hero.astro';
+import Card from '../components/Card.astro';
+import Sobremi from '../layouts/Sobremi.astro';
 
 ---
 
@@ -13,25 +16,23 @@ import Nav from '../components/Nav.astro';
 <html lang="es" class="dark">
   <head>
     <Head title="Anibal Simarro - Web/Game Developer" />
-  </head>
   <body
     class="
     bg-slate-50 
     text-slate-900 
     antialiased 
     bg-fixed 
-    dark:bg-slate-900 
     dark:text-slate-50 
-    dark:bg-gradient-to-t 
-    dark:from-slate-500 
-    dark:to-slate-800
+    dark:bg-slate-950
     "
   >
-    <header class="p-4">
-      <Nav/>
-    </header>
 
-    <div class="container mx-auto text-lg ">
+    <Nav/>
+    <Hero/>
+
+    <div class="container mx-auto text-lg">
+      <hr class="my-4 border-t-2 border-slate-900">
+      <Sobremi/>
       <h1 class="font-thin">
         Hola, Este es mi portfolio <span>Astro</span>
       </h1>

@@ -1,0 +1,27 @@
+---
+import GlowButton from "../components/GlowButton.astro"
+import Code from "../icons/Code.astro";
+import Joypad from "../icons/Joypad.astro";
+import "../styles/global.css"
+import '@fontsource-variable/pixelify-sans';
+
+let srcImage = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+---
+
+<section  class="bg-cover bg-center h-screen">
+  <div class="flex items-center justify-center h-full bg-slate-950 ">
+    <div class="text-center">
+      <h1 class="text-4xl  text-lime-400 mb-4 pixel-f type-animation">&lt;Aníbal Simarro/&gt;</h1>
+      <h2 class="text-2xl font-medium text-white mb-8 ">Web/Game Developer</h2>
+      <div class="mb-8 flex items-center justify-center space-x-16">
+        <GlowButton link="#" gradientA={"from-lime-400"} gradientB={"to-cyan-400"} colorLogo={"text-lime-400"}><Joypad></Joypad></GameButton>
+        <GlowButton link="#" gradientA={"from-purple-400"} gradientB={"to-cyan-400"} colorLogo={"text-purple-400"}><Code></Code></GlowButton>
+      </div>
+
+      
+    </div>
+    <a href="#sobre-mi" class="absolute bottom-4   px-3.5 py-1 border-2 border-lime-400 text-lime-400 rounded-full text-4xl animate-bounce">
+      &darr;
+    </a>
+  </div>
+</section>
