@@ -4,6 +4,7 @@
 
 
 /* Animations*/
+
 @keyframes fadeIn{
   from{
     opacity: 0;
@@ -32,9 +33,39 @@
   }
 }
 
+@keyframes translate-in-x {
+  from{
+    translate: -100px;
+    opacity: 0;
+  }to{
+    translate: 0px;
+    opacity: 1;
+
+  }
+  
+}
+
+@keyframes translate-in-y {
+  from{
+    translate: 0px -50px;
+    opacity: 0;
+  }to{
+    translate: 0px 0px;
+    opacity: 1;
+
+  }
+  
+}
+
 
 .fade-in{
   animation: fadeIn 3s;
+}
+.trans-x-animation{
+  animation: translate-in-x 5s forwards;
+}
+.trans-y-animation{
+  animation: translate-in-y 3s forwards;
 }
 .type-animation{
   overflow: hidden;

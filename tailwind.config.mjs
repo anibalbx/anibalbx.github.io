@@ -6,4 +6,19 @@ export default {
 		extend: {},
 	},
 	plugins: [],
+  safelist: [
+    'border-blue-500',
+    'shadow-blue-400/30',
+    'hover:shadow-blue-400/50',
+    'border-blue-900',
+    'border-red-500',
+    'shadow-red-400/30',
+    'hover:shadow-red-400/50',
+    'border-red-900',
+    'border-orange-500',
+    'shadow-orange-400/30',
+    'hover:shadow-orange-400/50',
+    'border-orange-900',
+  ],
+
 }
