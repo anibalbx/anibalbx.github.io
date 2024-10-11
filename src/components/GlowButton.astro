@@ -5,17 +5,20 @@ interface Props {
   gradientA: String,
   gradientB: String,
   colorLogo: String,
+  props: String
 }
 
-const { link, gradientA, gradientB, colorLogo} = Astro.props;
+const { link, gradientA, gradientB, colorLogo, props} = Astro.props;
 ---
 
 
-<div class="flex justify-center items-center">
-  <div class="relative w-32 h-32">
+<div class='flex justify-center items-center '>
+  <div class=`relative ${props}`>
     <div class=`absolute inset-0 bg-gradient-to-t ${gradientA} ${gradientB}  z-0 rounded-lg blur-md `></div>
      <a href={link}>
-       <div class=`absolute inset-0 bg-gray-950  rounded-lg z-10 ${colorLogo} flex justify-center items-center text-sm`><slot/></div>
+       <div class=`hover:mb-1 absolute inset-0 bg-gray-950  rounded-lg z-10 ${colorLogo} flex justify-center items-center text-sm`>
+        <slot/>
+      </div>
      </a>
   </div>
 </div>

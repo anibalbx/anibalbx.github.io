@@ -1,18 +1,91 @@
 ---
 import GlowButton from "../components/GlowButton.astro";
 import ReactLogo from "../icons/ReactLogo.astro"
+import Unreal from "../icons/Unreal.astro";
 
 ---
 
-<section id="#sobre-mi" class="my-4">
-  <div>
-    <h2 class="text-2xl text-lime-400 pixel-f">Skills</h2>
+<section id="#tech-skills" class="my-4 ">
+  <h2 class="text-2xl text-lime-400 pixel-f">Tech Skills</h2>
+
     
-    <div>
-      <GlowButton link="#" gradientA={"from-cyan-500"} gradientB={"to-cyan-700"} colorLogo={"text-cyan-500"}>
-        
+    <div class="flex flex-wrap p-8 space-x-12 space-y-10 justify-center ">
+      <div class="mt-10 ml-12">
+        <GlowButton props={"w-40 h-32"} link="#" gradientA={"from-cyan-500"} gradientB={"to-cyan-700"} colorLogo={"text-cyan-500"}>
+          <p class="text-2xl">
+            <i class="fa-brands fa-react"></i>
+            React.js
+          </p>
+        </GlowButton>
+      </div>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-violet-200"} gradientB={"to-violet-500"} colorLogo={"text-violet-500"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-php"></i>
+          PHP
+        </p>
       </GlowButton>
+      <GlowButton props={"w-64 h-32"} link="#" gradientA={"from-red-200"} gradientB={"to-red-500"} colorLogo={"text-red-500"}>
+        <Unreal props="size-8 mr-1"/>
+        <p class="text-2xl">
+          Unreal Engine
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-64 h-32"} link="#" gradientA={"from-gray-200"} gradientB={"to-gray-500"} colorLogo={"text-gray-500"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-unity"></i>
+            Unity Engine
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-gray-200"} gradientB={"to-blue-500"} colorLogo={"text-gray-300"}>
+        <p class="text-2xl">
+          <i class="fa-solid fa-c"></i>
+          ++
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-purple-400"} gradientB={"to-blue-500"} colorLogo={"text-blue-500"}>
+        <p class="text-2xl">
+          <i class="fa-solid fa-c"></i>
+          #
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-red-400"} gradientB={"to-blue-500"} colorLogo={"text-red-500"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-java"></i>
+          Java
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-orange-200"} gradientB={"to-orange-500"} colorLogo={"text-orange-500"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-html5"></i>
+          HTML
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-blue-500"} gradientB={"to-blue-800"} colorLogo={"text-blue-500"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-css3-alt"></i>
+          CSS
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-yellow-600"} gradientB={"to-yellow-400"} colorLogo={"text-yellow-400"}>
+        <p class="text-2xl">
+          <i class="fa-brands fa-js"></i>
+          JS
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-gray-600"} gradientB={"to-gray-400"} colorLogo={"text-gray-300"}>
+        <p class="text-2xl">
+          <i class="fa-solid fa-database"></i>
+          SQL
+        </p>
+      </GlowButton>
+      <GlowButton props={"w-32 h-32"} link="#" gradientA={"from-pink-600"} gradientB={"to-pink-400"} colorLogo={"text-pink-500"}>
+        <p class="text-4xl">
+          <i class="fa-brands fa-git"></i>
+          
+        </p>
+      </GlowButton>
+
     </div>
 
-  </div>
+
 </section>

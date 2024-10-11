@@ -1,0 +1,25 @@
+---
+import Card from "../components/Card.astro";
+import { fade } from 'astro:transitions';
+
+---
+<section id="#tech-skills" class="my-4 p-8">
+  <h2 class="text-2xl text-lime-400 pixel-f">Secondary Skills</h2>
+  <div class="flex justify-center items-center my-8">
+    <div transition:animate={fade({ duration: '0.4s' })} class="w-1/2 bg-slate-900 p-8 rounded-lg border-2 border-slate-800 text-center">
+      <ul class="">
+        <li class=" hover:text-blue-300">Photoshop</li>
+        <hr class="my-4 border-t-2 border-slate-800">
+        <li class="hover:text-yellow-300">Video y Audio Editor (Sony Vegas y Audacity)</li>
+        <hr class="my-4 border-t-2 border-slate-800">
+        <li class="hover:text-blue-500">Meta Business Suite</li>
+        <hr class=" my-4 border-t-2 border-slate-800">
+        <li class="hover:text-green-300" >Wordpress y PrestaShop</li>
+        <hr class="my-4 border-t-2 border-slate-800">
+        <li class="hover:text-red-300">Google Analytics y Google Search Console</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
