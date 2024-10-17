@@ -1,0 +1,60 @@
+---
+const { id, images } = Astro.props;
+---
+
+<div class="relative w-full mx-auto" data-id={id}>
+  <button id={"prevBtn" + id} class="absolute left-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full z-10">
+    &#10094;
+  </button>
+
+  <div class="overflow-hidden">
+    <div id={"carousel" + id} class="flex transition-transform duration-300 h-96">
+      {images.map((img) => (
+        <img src={img.src} class="object-contain w-full flex-shrink-0" alt={img.alt} />
+      ))}
+    </div>
+  </div>
+
+  <button id={"nextBtn" + id} class="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full z-10">
+    &#10095;
+  </button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // For multiple carrousels
+    const carousels = document.querySelectorAll('[data-id]');
+
+    carousels.forEach(carouselContainer => {
+      const id = carouselContainer.getAttribute('data-id');
+
+      const carousel = document.getElementById("carousel" + id);
+      const images = carousel.children;
+      const totalImages = images.length;
+      let index = 0;
+
+      document.getElementById("nextBtn" + id).addEventListener("click", () => {
+        if (index < totalImages - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+        updateCarousel();
+      });
+
+      document.getElementById("prevBtn" + id).addEventListener("click", () => {
+        if (index > 0) {
+          index--;
+        } else {
+          index = totalImages - 1;
+        }
+        updateCarousel();
+      });
+
+      function updateCarousel() {
+        const offset = index * -100;
+        carousel.style.transform = `translateX(${offset}%)`;
+      }
+    });
+  });
+</script>

@@ -3,29 +3,30 @@ import { Image } from "astro:assets";
 
 interface Props {
   title: string,
-  school: String,
+  site: String,
   year: String,
   description: String,
   color: String,
   srcImage: String
 }
 
-const { title, school, year, description, color, srcImage} = Astro.props;
+const { title, site, year, description, color, srcImage} = Astro.props;
 
 
 
 
 ---
 
-  <div class=`opacity-0 animate-y border-2 border-${color}-500 p-4 rounded-lg  w-96 shadow-lg shadow-${color}-400/30  hover:shadow-${color}-400/50 `>
+  <div class=`overflow-hidden opacity-0 animate-y border-2 border-${color}-500 p-4 rounded-lg  w-96 shadow-lg shadow-${color}-400/30  hover:shadow-${color}-400/50 `>
     <image 
     src={srcImage}
     alt="descriptive text"
     width="50"
     height="50"
-    class=`w-16 h-16 rounded-full object-cover`></image>
+    class=`shadow-lg shadow-${color}-400/30 relative w-32 h-32 rounded-full object-cover border-2 border-${color}-500`
+    style="top: -20px; left:-20px;"></image>
     <h3 class="font-bold">{title}</h3>
-    <h4 class="text-base">{school}</h4>
+    <h4 class="text-base">{site}</h4>
     <p class="text-base">{year}</p>
     <hr class=`border-t-2 border-${color}-900 my-2`/>
     <p class="italic font-light text-sm text-justify">{description}</p>

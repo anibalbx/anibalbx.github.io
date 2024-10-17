@@ -19,6 +19,11 @@ export default {
     'shadow-orange-400/30',
     'hover:shadow-orange-400/50',
     'border-orange-900',
+
+    'border-cyan-500',
+    'shadow-cyan-400/30',
+    'hover:shadow-cyan-400/50',
+    'border-cyan-900',
   ],
 
 }

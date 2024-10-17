@@ -1,0 +1,205 @@
+---
+import Carrousel from "../components/Carrousel.astro";
+
+const imageArray = [
+  {src: "../../public/images/cube-rush.png" , alt: "Cuberush-1"},
+  {src: "../../public/images/cube-rush-2.png" , alt: "Cuberush-2"},
+  {src: "../../public/images/cube-rush-3.png" , alt: "Cuberush-3"},
+  {src: "../../public/images/cube-rush-4.png" , alt: "Cuberush-4"},
+];
+
+---
+
+<section id="game-portfolio" class="my-4 p-8">
+  <h2 class="text-2xl text-lime-400 pixel-f">Game Dev Portfolio</h2>
+  <div class="flex mt-4 w-full " style="height: 450px;">
+    <a
+      href="#aces-in-the-dust"
+      class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
+    >
+      <img
+        class="object-cover w-full h-full"
+        src="https://thegdwc.com/images/games/7200/7206-1-1664296129.jpg"
+      /></a
+    >
+    <a
+      href="#"
+      class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
+    >
+      <img
+        class="object-cover w-full h-full"
+        src="../../public/images/coal-engine.png"
+      /></a
+    >
+
+    <a
+      href="#"
+      class="w-32 grow hover:w-2 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
+    >
+      <img
+        class="object-cover w-full h-full"
+        src="../../public/images/cube-rush.png"
+      /></a
+    >
+
+    <a
+      href="#"
+      class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
+    >
+      <img
+        class="object-cover w-full h-full"
+        src="../../public/images/anibal-esat.png"
+      /></a
+    >
+  </div>
+
+  <h3 class="pixel-f text-lime-400 mt-20">Aces in the Dust</h3>
+  <div
+    id="aces-in-the-dust"
+    class="font-extralight flex flex-row space-x-6 items-start"
+  >
+    <div class="text-sm w-1/2">
+      <p>
+        Proyecto realizado en colaboración con Artistas, Diseñadores y otros
+        Programadores en Unreal Engine 4.
+      </p>
+      <p>Tareas realizadas:</p>
+      <ul class="list-disc">
+        <li class="ml-8">
+          Programación lógica de enemigos (IA, Mecánicas, Movimiento,
+          Comportamiento, Disparos)
+        </li>
+        <li class="ml-8">
+          Programación de gameplay de jugador (Disparos, Bullet Storage, Tipos
+          de jugador y mecánicas)
+        </li>
+        <li class="ml-8">Diseño de niveles.</li>
+      </ul>
+      <p>Ganadores del premio Fan Choice Hobby Category 2022 de la GDWC</p>
+      <div class="flex justify-center mt-4">
+        <img
+          class="w-64 h-64 rounded-lg"
+          src="https://www.esat.es/wp-content/uploads/2023/04/GDWC_ESAT_2.jpg"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+      <iframe
+        class="w-full h-80"
+        src="https://www.youtube.com/embed/w0xEMUX5l7c?si=y3kb9Jlfg497y72O"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <div class="text-lime-400 text-6xl">
+        <p class="text-base pixel-f">Get it on Steam!</p>
+        <p class="text-center">
+          <a
+            href="https://store.steampowered.com/app/1658080/Aces_in_the_Dust/?l=spanish"
+            class=""><i class="fa-brands fa-square-steam"></i></a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="pixel-f text-lime-400 mt-20">Coal Engine</h3>
+  <div
+    id="coal-engine"
+    class="font-extralight flex space-x-4 justify-center items-start"
+  >
+    <div class="text-sm w-1/2">
+      <p>
+        Coal Engine es un motor gráfico realizado en C++ con la API gráfica
+        OpenGL3. Realizado por Alejandro Sanchez Gimeno y Aníbal Simarro Garrido.
+      </p>
+      <p>Tareas relizadas:</p>
+      <ul class="list-disc">
+        <li class="ml-8">Multi-threading engine</li>
+        <li class="ml-8">Forward render</li>
+        <li class="ml-8">Deferred render</li>
+        <li class="ml-8">Entity-Component-System based</li>
+        <li class="ml-8">Lua Scripting</li>
+        <li class="ml-8">
+          PBR & Pong Illumination (Spot, Point and Directional Lighting)
+        </li>
+        <li class="ml-8">DisplayList implementation (Draw Task Queue)</li>
+        <li class="ml-8">Post-Process Effects (Bloom, Gray Scale, Blur...)</li>
+        <li class="ml-8">Shadows</li>
+        <li class="ml-8">OBJ Loader</li>
+        <li class="ml-8">FrontEnd User Interface</li>
+
+      </ul>
+      <div class="flex justify-center mt-4">
+        <img
+          class="w-full h-auto rounded-lg ml-4"
+         src="../../public/images/coal-engine-2.png"
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+      <iframe
+        class="w-full h-80 "
+        src="https://www.youtube.com/embed/LhTw2rLMN68?si=_OcHPZBYbLADxQBW"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <h3 class="pixel-f text-lime-400 mt-20">Cube Rush</h3>
+  <div
+    id="cube-rush"
+    class="font-extralight flex space-x-4 justify-center items-start"
+  >
+    <div class="text-sm w-1/2">
+      <p>
+        Proyecto de juego móvil realizado por un equipo de tres programadores hecho en Unity3D
+      </p>
+      <p>Tareas realizadas:</p>
+      <ul class="list-disc">
+        <li class="ml-8">Programación de gameplay de jugador</li>
+        <li class="ml-8">UI/UX</li>
+        <li class="ml-8">Diseño y creación de menús</li>
+        <li class="ml-8">Marketing Resources</li>
+        <li class="ml-8">Diseño de niveles</li>
+        <li class="ml-8">Implementación para Android</li>
+       
+      </ul>
+      <div class="flex justify-center mt-4">
+        <Carrousel id="cuberush" images={imageArray} />
+      </div>
+    </div>
+
+    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+      <iframe
+        class="w-full h-80 "
+        src="https://www.youtube.com/embed/CVBHA71Fp80?si=Qp1e-w46SnKFDBCB"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <h3 class="pixel-f text-lime-400 mt-20">Otros proyectos Academicos</h3>
+  <div
+    id="cube-rush"
+    class="font-extralight flex space-x-4 justify-center items-start"
+  >
+    <div class="text-sm w-full">
+      <ul class="list-disc">
+        <li class="ml-8">Clon de juego "Gravitar" de Atari en motor de videojuegos no comercial C++.</li>
+        <li class="ml-8">Desarrollo de API estructuras de datos (Vector, List, Double List,  Stack y Queue) en lenguaje C. </li>
+        <li class="ml-8">Optimización de gráficos a bajo nivel con procesadores ARM.</li>
+        <li class="ml-8">Implementación de features con OpenGL en motor gráfico no comercial. </li>
+        <li class="ml-8">Diseño y desarrollo de varios prototipos de videojuegos en Unity Engine y Unreal Engine.</li>
+        <li class="ml-8">Desarrollo de API de Audio con OpenAi en C++.</li>
+        <li class="ml-8">Desarrollo de IA enfocada a videojuegos (Algoritmo de búsqueda de caminos A*, Generación procedural de cavernas, Máquinas de estado y Árboles de comportamiento).</li>
+       
+      </ul>
+    </div>
+
+  </div>
+</section>
