@@ -33,7 +33,7 @@ const { id, images } = Astro.props;
       const totalImages = images.length;
       let index = 0;
 
-      document.getElementById("nextBtn" + id).addEventListener("click", () => {
+      document.getElementById("nextBtn" + id)?.addEventListener("click", () => {
         if (index < totalImages - 1) {
           index++;
         } else {
@@ -42,7 +42,7 @@ const { id, images } = Astro.props;
         updateCarousel();
       });
 
-      document.getElementById("prevBtn" + id).addEventListener("click", () => {
+      document.getElementById("prevBtn" + id)?.addEventListener("click", () => {
         if (index > 0) {
           index--;
         } else {

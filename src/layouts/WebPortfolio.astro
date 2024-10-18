@@ -30,7 +30,7 @@ const imageControlStockArray = [
 <section id="web-portfolio" class="my-4 p-8">
   <h2 class="text-2xl text-lime-400 pixel-f">Web/App Dev Portfolio</h2>
 
-  <div class="flex mt-4 w-full" style="height: 450px;">
+  <div class="flex mt-4 w-full h-96 max-md:h-32 max-lg:h-56" >
     <a
       href="#autorasiga-web"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
@@ -41,7 +41,7 @@ const imageControlStockArray = [
       /></a
     >
     <a
-      href="#rasigacore"
+      href="#rasiga-core"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
     >
       <img
@@ -51,16 +51,16 @@ const imageControlStockArray = [
     >
     
     <a
-    href="#controlstock"
-    class="w-32 grow hover:w-2 opacity-80 hover:opacity-100 hover:contrast-90 transition-all ease-in-out duration-500"
+    href="#control-stock"
+    class="w-32 bg-white grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-90 transition-all ease-in-out duration-500"
     >
     <img
-    class="object-cover w-full h-full"
+    class="object-contain w-full h-full"
     src="../../public/images/appcontrolstock.png"
     /></a
     >
     <a
-      href="#companionapp"
+      href="#companion-app"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
     >
       <img
@@ -73,9 +73,9 @@ const imageControlStockArray = [
   <h3 class="pixel-f text-lime-400 mt-20">Autorasiga.com</h3>
   <div
     id="autorasiga-web"
-    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8"
+    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8 max-lg:flex-col max-lg:space-y-5 max-lg:space-x-0"
   >
-    <div class="w-1/2">
+    <div class="w-1/2 max-lg:w-full">
       <a href="https://www.autorasiga.com/" target="_blank">
         <img
           class="object-cover w-full h-full rounded-lg opacity-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-100"
@@ -83,7 +83,7 @@ const imageControlStockArray = [
         />
       </a>
     </div>
-    <div class="w-1/2">
+    <div class="w-1/2 max-lg:w-full">
       <p>Página web tienda de vehículos de segundamano.</p>
       <p>Características:</p>
       <ul class="list-disc">
@@ -105,40 +105,40 @@ const imageControlStockArray = [
       </ul>
       <p>Tecnologías utilizadas:</p>
       <div
-        class="flex flex-wrap mt-2 space-x-2 space-y-2 items-center justify-center"
+        class="flex flex-wrap mt-2  items-center justify-center"
       >
         <div
-          class="text-center font-bold text-purple-600 border-2 p-4 rounded-lg border-purple-600 mt-2 ml-2"
+          class="text-center font-bold text-purple-600 border-2 p-4 rounded-lg border-purple-600 m-2"
         >
           <p>Bootstrap</p>
           <i class="fa-brands fa-bootstrap text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-violet-700 border-2 p-4 rounded-lg border-violet-700"
+          class="text-center font-bold text-violet-700 border-2 p-4 rounded-lg border-violet-700 m-2"
         >
           <p>PHP</p>
           <i class="fa-brands fa-php text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-orange-700 border-2 p-4 rounded-lg border-orange-700"
+          class="text-center font-bold text-orange-700 border-2 p-4 rounded-lg border-orange-700 m-2"
         >
           <p>HTML5</p>
           <i class="fa-brands fa-html5 text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-blue-500 border-2 p-4 rounded-lg border-blue-500"
+          class="text-center font-bold text-blue-500 border-2 p-4 rounded-lg border-blue-500 m-2"
         >
           <p>CSS3</p>
           <i class="fa-brands fa-css3-alt text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-yellow-500 border-2 p-4 rounded-lg border-yellow-500"
+          class="text-center font-bold text-yellow-500 border-2 p-4 rounded-lg border-yellow-500 m-2"
         >
           <p>JS</p>
           <i class="fa-brands fa-js text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100"
+          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100 m-2"
         >
           <p>SQL</p>
           <i class="fa-solid fa-database text-2xl"></i>
@@ -149,12 +149,12 @@ const imageControlStockArray = [
   <h3 class="pixel-f text-lime-400 mt-20">Rasiga Core</h3>
   <div
     id="rasiga-core"
-    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8"
+    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8 max-lg:flex-col max-lg:space-y-5 max-lg:space-x-0"
   >
-    <div class="w-1/2">
+    <div class="w-1/2 max-lg:w-full">
       <Carrousel id="rasigacore" images={imageRasigaCoreArray}/>
     </div>
-    <div class="w-1/2">
+    <div class="w-1/2 max-lg:w-full">
       <p>Aplicación web de gestión de stock con ReactJS.</p>
       <p>Características:</p>
       <ul class="list-disc">
@@ -173,46 +173,46 @@ const imageControlStockArray = [
       </ul>
       <p>Tecnologías utilizadas:</p>
       <div
-        class="flex flex-wrap mt-2 space-x-2 space-y-2 items-center justify-center"
+        class="flex flex-wrap mt-2  items-center justify-center"
       >
       <div
-        class="text-center font-bold text-cyan-500 border-2 p-4 rounded-lg border-cyan-500 mt-2 ml-2"
+        class="text-center font-bold text-cyan-500 border-2 p-4 rounded-lg border-cyan-500 m-2"
       >
         <p>React.JS</p>
         <i class="fa-brands fa-react text-2xl"></i>
       </div>
       <div
-          class="text-center font-bold text-purple-600 border-2 p-4 rounded-lg border-purple-600 "
+          class="text-center font-bold text-purple-600 border-2 p-4 rounded-lg border-purple-600 m-2"
         >
           <p>Bootstrap</p>
           <i class="fa-brands fa-bootstrap text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-violet-700 border-2 p-4 rounded-lg border-violet-700"
+          class="text-center font-bold text-violet-700 border-2 p-4 rounded-lg border-violet-700 m-2"
         >
           <p>PHP</p>
           <i class="fa-brands fa-php text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-orange-700 border-2 p-4 rounded-lg border-orange-700"
+          class="text-center font-bold text-orange-700 border-2 p-4 rounded-lg border-orange-700 m-2"
         >
           <p>HTML5</p>
           <i class="fa-brands fa-html5 text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-blue-500 border-2 p-4 rounded-lg border-blue-500"
+          class="text-center font-bold text-blue-500 border-2 p-4 rounded-lg border-blue-500 m-2"
         >
           <p>CSS3</p>
           <i class="fa-brands fa-css3-alt text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-yellow-500 border-2 p-4 rounded-lg border-yellow-500"
+          class="text-center font-bold text-yellow-500 border-2 p-4 rounded-lg border-yellow-500 m-2"
         >
           <p>JS</p>
           <i class="fa-brands fa-js text-2xl"></i>
         </div>
         <div
-          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100"
+          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100 m-2"
         >
           <p>SQL</p>
           <i class="fa-solid fa-database text-2xl"></i>
@@ -222,13 +222,13 @@ const imageControlStockArray = [
   </div>
   <h3 class="pixel-f text-lime-400 mt-20">APP Android Control Stock Neumáticos</h3>
   <div
-    id="rasiga-core"
-    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8"
+    id="control-stock"
+    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8 max-md:flex-col max-md:space-y-5 max-md:space-x-0"
   >
-    <div class="w-1/2">
-      <Carrousel id="rasigacore2" images={imageControlStockArray}/>
+    <div class="w-1/2 max-md:w-full">
+      <Carrousel id="controlstock" images={imageControlStockArray}/>
     </div>
-    <div class="w-1/2">
+    <div class="w-1/2 max-md:w-full">
       <p>Aplicación de control Stock de neumáticos para Android</p>
       <p>Características:</p>
       <ul class="list-disc">
@@ -244,23 +244,23 @@ const imageControlStockArray = [
       </ul>
       <p>Tecnologías utilizadas:</p>
       <div
-        class="flex flex-wrap mt-2 space-x-2 space-y-2 items-center justify-center"
+        class="flex flex-wrap mt-2  items-center justify-center"
       >
       <div
-        class="text-center font-bold text-green-500 border-2 p-4 rounded-lg border-green-500 mt-2 ml-2"
+        class="text-center font-bold text-green-500 border-2 p-4 rounded-lg border-green-500 m-2"
       >
         <p>Android</p>
         <i class="fa-brands fa-android text-2xl"></i>
       </div>
       <div
-          class="text-center font-bold text-red-600 border-2 p-4 rounded-lg border-blue-600  "
+          class="text-center font-bold text-red-600 border-2 p-4 rounded-lg border-blue-600  m-2 "
         >
           <p>Java</p>
           <i class="fa-brands fa-java text-2xl"></i>
         </div>
        
         <div
-          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100"
+          class="text-center font-bold text-slate-100 border-2 p-4 rounded-lg border-slate-100 m-2"
         >
           <p>SQLite</p>
           <i class="fa-solid fa-database text-2xl"></i>
@@ -270,10 +270,10 @@ const imageControlStockArray = [
   </div>
   <h3 class="pixel-f text-lime-400 mt-20">Companion Android APP</h3>
   <div
-    id="rasiga-core"
-    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8"
+    id="companion-app"
+    class="font-extralight flex flex-row items-start mt-10 text-sm space-x-8 max-lg:flex-col max-lg:space-y-5 max-lg:space-x-0"
   >
-    <div class="w-1/2 space-y-8">
+    <div class="w-1/2 space-y-8 max-lg:w-full">
       <img
       class="object-cover w-full h-full rounded-lg  "
       src="../../public/images/CompanionApp.png"
@@ -286,7 +286,7 @@ const imageControlStockArray = [
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen></iframe>
     </div>
-    <div class="w-1/2">
+    <div class="w-1/2 max-lg:w-full">
       <p>Pequeña Aplicación de prueba para Android</p>
       <p>Características:</p>
       <ul class="list-disc">

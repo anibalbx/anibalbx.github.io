@@ -17,7 +17,7 @@ const { title, site, year, description, color, srcImage} = Astro.props;
 
 ---
 
-  <div class=`overflow-hidden opacity-0 animate-y border-2 border-${color}-500 p-4 rounded-lg  w-96 shadow-lg shadow-${color}-400/30  hover:shadow-${color}-400/50 `>
+  <div class=`overflow-hidden opacity-0 animate-y border-2 border-${color}-500 p-4 rounded-lg  w-96 max-sm:w-80 shadow-lg shadow-${color}-400/30  hover:shadow-${color}-400/50 `>
     <image 
     src={srcImage}
     alt="descriptive text"

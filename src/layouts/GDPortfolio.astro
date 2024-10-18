@@ -12,7 +12,7 @@ const imageArray = [
 
 <section id="game-portfolio" class="my-4 p-8">
   <h2 class="text-2xl text-lime-400 pixel-f">Game Dev Portfolio</h2>
-  <div class="flex mt-4 w-full " style="height: 450px;">
+  <div class="flex mt-4 w-full h-96 max-md:h-32 max-lg:h-56"  >
     <a
       href="#aces-in-the-dust"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
@@ -23,7 +23,7 @@ const imageArray = [
       /></a
     >
     <a
-      href="#"
+      href="#coal-engine"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
     >
       <img
@@ -33,17 +33,17 @@ const imageArray = [
     >
 
     <a
-      href="#"
-      class="w-32 grow hover:w-2 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
+      href="#cube-rush"
+      class="w-24 bg-black grow hover:w-96  opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
     >
       <img
-        class="object-cover w-full h-full"
+        class="object-contain w-full h-full"
         src="../../public/images/cube-rush.png"
       /></a
     >
 
     <a
-      href="#"
+      href="#otros"
       class="w-32 grow hover:w-96 opacity-80 hover:opacity-100 hover:contrast-125 transition-all ease-in-out duration-500"
     >
       <img
@@ -56,9 +56,9 @@ const imageArray = [
   <h3 class="pixel-f text-lime-400 mt-20">Aces in the Dust</h3>
   <div
     id="aces-in-the-dust"
-    class="font-extralight flex flex-row space-x-6 items-start"
+    class="font-extralight flex flex-row max-md:flex-col space-x-6 max-md:space-y-5 max-md:space-x-0 items-start"
   >
-    <div class="text-sm w-1/2">
+    <div class="text-sm w-1/2 max-md:w-full">
       <p>
         Proyecto realizado en colaboración con Artistas, Diseñadores y otros
         Programadores en Unreal Engine 4.
@@ -83,7 +83,7 @@ const imageArray = [
         />
       </div>
     </div>
-    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+    <div class="flex flex-col w-1/2 max-md:w-full items-center justify-center space-y-4">
       <iframe
         class="w-full h-80"
         src="https://www.youtube.com/embed/w0xEMUX5l7c?si=y3kb9Jlfg497y72O"
@@ -106,9 +106,9 @@ const imageArray = [
   <h3 class="pixel-f text-lime-400 mt-20">Coal Engine</h3>
   <div
     id="coal-engine"
-    class="font-extralight flex space-x-4 justify-center items-start"
+    class="font-extralight flex space-x-4 justify-center items-start  max-md:flex-col max-md:space-y-5 max-md:space-x-0 "
   >
-    <div class="text-sm w-1/2">
+    <div class="text-sm w-1/2 max-md:w-full">
       <p>
         Coal Engine es un motor gráfico realizado en C++ con la API gráfica
         OpenGL3. Realizado por Alejandro Sanchez Gimeno y Aníbal Simarro Garrido.
@@ -130,7 +130,7 @@ const imageArray = [
         <li class="ml-8">FrontEnd User Interface</li>
 
       </ul>
-      <div class="flex justify-center mt-4">
+      <div class="flex justify-center mt-4 max-md:w-full">
         <img
           class="w-full h-auto rounded-lg ml-4"
          src="../../public/images/coal-engine-2.png"
@@ -138,7 +138,7 @@ const imageArray = [
       </div>
     </div>
 
-    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+    <div class="w-1/2 max-md:w-full items-center justify-center">
       <iframe
         class="w-full h-80 "
         src="https://www.youtube.com/embed/LhTw2rLMN68?si=_OcHPZBYbLADxQBW"
@@ -152,9 +152,9 @@ const imageArray = [
   <h3 class="pixel-f text-lime-400 mt-20">Cube Rush</h3>
   <div
     id="cube-rush"
-    class="font-extralight flex space-x-4 justify-center items-start"
+    class="font-extralight flex space-x-4 justify-center items-start  max-md:flex-col max-md:space-y-5 max-md:space-x-0"
   >
-    <div class="text-sm w-1/2">
+    <div class="text-sm w-1/2 max-md:w-full">
       <p>
         Proyecto de juego móvil realizado por un equipo de tres programadores hecho en Unity3D
       </p>
@@ -173,7 +173,7 @@ const imageArray = [
       </div>
     </div>
 
-    <div class="flex flex-col w-1/2 items-center justify-center space-y-4">
+    <div class="flex flex-col w-1/2 items-center justify-center space-y-4 max-md:w-full">
       <iframe
         class="w-full h-80 "
         src="https://www.youtube.com/embed/CVBHA71Fp80?si=Qp1e-w46SnKFDBCB"
@@ -185,7 +185,7 @@ const imageArray = [
   </div>
   <h3 class="pixel-f text-lime-400 mt-20">Otros proyectos Academicos</h3>
   <div
-    id="cube-rush"
+    id="otros"
     class="font-extralight flex space-x-4 justify-center items-start"
   >
     <div class="text-sm w-full">
