@@ -21,7 +21,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '8.0.0'  # Specify the pnpm version you want to use
+          version: '9.12.0'  # Specify the pnpm version you want to use
 
       # Install dependencies using pnpm
       - name: Install dependencies
