@@ -2,10 +2,10 @@
 import Carrousel from "../components/Carrousel.astro";
 
 const imageArray = [
-  {src: "../../public/images/cube-rush.png" , alt: "Cuberush-1"},
-  {src: "../../public/images/cube-rush-2.png" , alt: "Cuberush-2"},
-  {src: "../../public/images/cube-rush-3.png" , alt: "Cuberush-3"},
-  {src: "../../public/images/cube-rush-4.png" , alt: "Cuberush-4"},
+  {src: "/images/cube-rush-2.png" , alt: "Cuberush-2"},
+  {src: "/images/cube-rush.png" , alt: "Cuberush-1"},
+  {src: "/images/cube-rush-3.png" , alt: "Cuberush-3"},
+  {src: "/images/cube-rush-4.png" , alt: "Cuberush-4"},
 ];
 
 ---
@@ -28,7 +28,8 @@ const imageArray = [
     >
       <img
         class="object-cover w-full h-full"
-        src="../../public/images/coal-engine.png"
+        src="/images/coal-engine.png"
+        alt="coal-engine"
       /></a
     >
 
@@ -38,7 +39,8 @@ const imageArray = [
     >
       <img
         class="object-contain w-full h-full"
-        src="../../public/images/cube-rush.png"
+        src="/images/cube-rush.png"
+        alt="cube-rush"
       /></a
     >
 
@@ -48,7 +50,8 @@ const imageArray = [
     >
       <img
         class="object-cover w-full h-full"
-        src="../../public/images/anibal-esat.png"
+        src="/images/anibal-esat.png"
+        alt="anibal-esat"
       /></a
     >
   </div>
@@ -133,11 +136,11 @@ const imageArray = [
       <div class="flex justify-center mt-4 max-md:w-full">
         <img
           class="w-full h-auto rounded-lg ml-4"
-         src="../../public/images/coal-engine-2.png"
+         src="/images/coal-engine-2.png"
+         alt="coal-engine-2"
         />
       </div>
     </div>
-
     <div class="w-1/2 max-md:w-full items-center justify-center">
       <iframe
         class="w-full h-80 "
