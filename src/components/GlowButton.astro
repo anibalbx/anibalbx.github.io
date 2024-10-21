@@ -14,7 +14,7 @@ const { gradientA, gradientB, colorLogo, props} = Astro.props;
 <div class='flex justify-center items-center p-4'>
   <div class=`relative ${props}`>
     <div class=`absolute inset-0 bg-gradient-to-t ${gradientA} ${gradientB}  z-0 rounded-lg blur-md `></div>
-       <div class=`hover:translate-y-1 absolute inset-0 bg-gray-950  rounded-lg z-10 ${colorLogo} flex justify-center items-center text-sm`>
+       <div class=`hover:translate-y-1 absolute inset-0 dark:bg-slate-950 bg-slate-100  rounded-lg z-10 ${colorLogo} flex justify-center items-center text-sm`>
         <slot/>
       </div>
   </div>

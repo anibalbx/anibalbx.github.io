@@ -5,35 +5,35 @@ import Sun from "../icons/Sun.astro";
 
 ---
 <header class="fixed top-0 p-4 dark:bg-gray-950  bg-gray-50  w-full z-50">
-  <div class="flex flex-row justify-between ">
+  <div class="flex flex-row justify-between items-center">
     <div class="pixel-f">
-      <a class="text-lime-400 hover:text-cyan-400" href="#hero">
+      <a class="dark:text-lime-400 dark:hover:text-cyan-400 text-lg text-blue-600" href="#hero">
         AS-DEV
       </a>
     </div>
     <div class="font-bold">
       <nav>
-        <div class="text-center">
+        <div class="text-center ">
           <button id="btn-collapse" class="lg:hidden">
-            <i class="fa-solid fa-bars"></i>
+            <i class="text-lg fa-solid fa-bars"></i>
           </button>
         </div>
-        <ul id="collapse" style="max-height: 0;" class="flex  text-center space-x-4  max-lg:flex-col max-lg:space-x-0 overflow-hidden collapse-animation">
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#hero">Inicio</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#sobre-mi">Sobre mí</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#tech-skills">Tech Skills</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#secondary-skills">Secondary Skills</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#formacion">Formacion</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#experiencia">Experiencia</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#game-portfolio">Game-dev Portfolio</a></li>
-          <li><a class="btn-nav dark:hover:text-lime-400 hover:text-cyan-400" href="#web-portfolio">Web/App Portfolio</a></li>
+        <ul id="collapse" class="flex text-sm text-center space-x-4  max-lg:flex-col max-lg:space-x-0 collapsible  ">
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#hero">Inicio</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#tech-skills">Tech Skills</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#secondary-skills">Secondary Skills</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#formacion">Formacion</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#experiencia">Experiencia</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#game-portfolio">Game-dev Portfolio</a></li>
+          <li><a class="btn-nav dark:hover:text-lime-400 dark:hover:text-cyan-400 hover:text-lime-500" href="#web-portfolio">Web/App Portfolio</a></li>
         </ul>
       </nav>
     </div>
     <div>
       <button 
         id="dark-mode-toggle" 
-        class="px-2 py-2 border-cyan-400 text-cyan-400 dark:text-lime-400 rounded-lg border-2 dark:border-lime-400"
+        class="px-2 py-2 border-blue-500 text-blue-600 dark:text-lime-400 rounded-lg border-2 dark:border-lime-400"
       >
         <Sun/>
       </button>
@@ -49,15 +49,7 @@ import Sun from "../icons/Sun.astro";
 
   const buttonClick = ()=>{
       
-    // document.getElementById("collapse")?.classList.toggle('transition-all');
-    // document.getElementById("collapse")?.classList.toggle('duration-500');
-    // document.getElementById("collapse")?.classList.toggle('ease-in-out');
-    // document.getElementById("collapse")?.classList.toggle('max-lg:h-full');
-    // document.getElementById("collapse")?.classList.toggle('max-lg:h-0');
-    document.getElementById("collapse")?.classList.toggle('collapse-animation');
-    document.getElementById("collapse")?.classList.toggle('expand-animation');
-    // document.getElementById("collapse")?.classList.toggle('max-lg:hidden');
-    // document.getElementById("collapse")?.classList.toggle('max-lg:hidden');
+    document.getElementById("collapse")?.classList.toggle('collapsed');
     console.log("toggle!")
 }
 
