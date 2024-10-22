@@ -71,6 +71,10 @@
   }
 }
 
+section {
+  scroll-margin-top: 50px; 
+}
+
 
 .fade-in{
   animation: fadeIn 3s;
