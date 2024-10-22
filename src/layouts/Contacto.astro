@@ -3,15 +3,28 @@
 <section id="contacto" class="my-4 p-8">
   <h2 class=" text-2xl  dark:text-lime-400 text-blue-600 pixel-f">Contacto</h2>
   <div class="p-10  flex justify-center  items-center w-full" >
-      <form action="https://formspree.io/f/xldednnz" method="POST" class="w-full">
+      <form action="https://formspree.io/f/xldednnz" method="POST" class="w-full" id="contact-form">
         <label class="">Nombre/Compañia:</label><br/>
         <input class="w-full rounded-md dark:bg-slate-950 bg-slate-50 border-2 dark:border-lime-400 border-blue-600" type="text" name="company-name" required minlength="4" maxlength="24"><br/>
         <label class="">Email:</label><br/>
         <input class="w-full rounded-md dark:bg-slate-950 bg-slate-50 border-2 dark:border-lime-400 border-blue-600" type="email" name="email"  maxlength="24"><br/>
         <label class="">Mensaje:</label><br/>
         <textarea  class="w-full rounded-md dark:bg-slate-950 bg-slate-50 border-2 dark:border-lime-400 border-blue-600" name="message"  /><br/>
-        <div class="g-recaptcha" data-sitekey="6LczxWgqAAAAALGqWulZEhDhKYxAv2bMRIiagWFB"></div>
-        <input class="border-2 dark:border-lime-400 border-blue-600  rounded-md p-4 pixel-f dark:text-lime-400 dark:hover:border-cyan-400 dark:hover:text-cyan-400 text-blue-600 hover:text-lime-500 hover:border-lime-500" type="submit" value="Submit">
-      </form>
+        <!-- <div class="g-recaptcha" data-sitekey="6LczxWgqAAAAALGqWulZEhDhKYxAv2bMRIiagWFB"></div> -->
+        <button class="g-recaptcha border-2 dark:border-lime-400 border-blue-600  rounded-md p-4 pixel-f dark:text-lime-400 dark:hover:border-cyan-400 dark:hover:text-cyan-400 text-blue-600 hover:text-lime-500 hover:border-lime-500"
+            data-sitekey="6LczxWgqAAAAALGqWulZEhDhKYxAv2bMRIiagWFB"
+            data-callback='onSubmit'
+            data-action='submit'>
+          Submit
+        </button>
+        <!-- <input class="border-2 dark:border-lime-400 border-blue-600  rounded-md p-4 pixel-f dark:text-lime-400 dark:hover:border-cyan-400 dark:hover:text-cyan-400 text-blue-600 hover:text-lime-500 hover:border-lime-500" type="submit" value="Submit">
+      </form> -->
   </div>
 </section>
+
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("contact-form")?.submit();
+  }
+</script>
