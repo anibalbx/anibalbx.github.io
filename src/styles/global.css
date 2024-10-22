@@ -58,7 +58,7 @@
   
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
   .collapsible{
     max-height: 0;
     overflow: hidden;
@@ -66,7 +66,7 @@
   }
   
   .collapsible.collapsed{
-    max-height: 200px;
+    max-height: 350px;
   
   }
 }
